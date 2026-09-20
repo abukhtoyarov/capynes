@@ -66,3 +66,5 @@ cargo test
 The tests use NES validation ROMs under `tests/test_roms`. Most of them are community emulator-test programs by authors such as Shay Green / blargg, Damian Yerrick / tepples, kevtris, Quietust, bisqwit, Sour, and others. The collection follows the common NESdev emulator-test set, and many files line up with the public `christopherpow/nes-test-roms` archive.
 
 Legal note: these are test and homebrew ROMs, not commercial game dumps. Several included readmes have permissive redistribution language. A few older test ROMs do not carry a clear license in this tree, so treat them as third-party test artifacts rather than code I authored. Commercial NES game ROMs are not included, and publishing downloaded commercial ROM sets is not OK.
+
+A big thanks to [rustness_monster](https://github.com/bugzmanov/rustness_monster) by Bugzmanov, which was a useful reference while working on Capynes. It helped a lot in figuring out some implementation details and structure.

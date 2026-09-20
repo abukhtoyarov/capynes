@@ -1,5 +1,7 @@
 # Capynes
 
+![Capynes](CAPYNES.PNG)
+
 Capynes is a small NES emulator written in Rust. It started as a hands-on way to learn Rust through an interesting systems programming project, with WASM and wgpu as additional goals. 
 
 What is here:

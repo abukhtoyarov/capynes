@@ -1,6 +1,6 @@
 # Capynes
 
-Capynes is a small NES emulator written in Rust. It started as a hands-on way to learn how the NES works from the CPU bus upward, and the current version is focused on the first straightforward runtime approach rather than a cycle-perfect rewrite.
+Capynes is a small NES emulator written in Rust. It started as a hands-on way to learn Rust through an interesting systems programming project, with WASM and wgpu as additional goals. 
 
 What is here:
 

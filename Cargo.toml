@@ -1,8 +1,60 @@
 [package]
 name = "capynes"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+default-run = "capynes"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "capynes_lib"
+path = "src/lib.rs"
+doctest = false
+
+[[bin]]
+name = "capynes"
+path = "src/main.rs"
+test = false
+
+[[bin]]
+name = "snake"
+path = "src/bin/snake.rs"
+test = false
 
 [dependencies]
+log = "^0.4"
+bitflags = "^2.4"
+lazy_static = "^1.4"
+winit = "0.28"
+wgpu = { version = "0.16", features = ["webgl"] }
+pollster = "0.3"
+cfg-if = "1.0"
+bytemuck = { version = "1.23", features = ["derive"] }
+web-time = "0.2"
+thiserror = "1.0.69"
+rand = "0.8"
+triple_buffer = "8.1"
+cpal = "0.17"
+ringbuf = "0.4"
+
+[dev-dependencies]
+ctor = "0.2" 
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+env_logger = "0.11"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+console_log = { version = "1.0", optional = true }
+wasm-bindgen = { version = "0.2", optional = true }
+web-sys = { version = "0.3", features = [
+    "Window",
+    "Document",
+    "HtmlCanvasElement",
+], optional = true }
+wasm-bindgen-futures = { version = "0.4", optional = true }
+gloo-timers = { version = "0.2", features = ["futures"], optional = true }
+console_error_panic_hook = { version = "0.1", optional = true }
+getrandom = { version = "0.2", features = ["js"], optional = true }
+
+[features]
+default = []
+web = ["wasm-bindgen", "wasm-bindgen-futures", "gloo-timers", "console_error_panic_hook", "web-sys", "console_log",
+"getrandom"]

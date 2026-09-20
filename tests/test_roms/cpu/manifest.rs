@@ -1,0 +1,202 @@
+cpu_manifest!(
+    blargg: [
+        (cpu_reset_registers, "./tests/test_roms/cpu/cpu_reset/registers.nes", true),
+        (cpu_reset_ram_after_reset, "./tests/test_roms/cpu/cpu_reset/ram_after_reset.nes", true),
+        (instr_misc, "./tests/test_roms/cpu/instr_misc/instr_misc.nes", false),
+        (instr_test_v5_official_only, "./tests/test_roms/cpu/instr_test_v5/official_only.nes", false),
+        (instr_test_v5_all_instrs, "./tests/test_roms/cpu/instr_test_v5/all_instrs.nes", false),
+        (
+            instr_test_v3_official_only,
+            "./tests/test_roms/cpu/instr_test-v3/official_only.nes",
+            false
+        ),
+        (
+            instr_test_v3_all_instrs,
+            "./tests/test_roms/cpu/instr_test-v3/all_instrs.nes",
+            false
+        ),
+        (
+            instr_test_v3_01_implied,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/01-implied.nes",
+            false
+        ),
+        (
+            instr_test_v3_02_immediate,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/02-immediate.nes",
+            false
+        ),
+        (
+            instr_test_v3_03_zero_page,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/03-zero_page.nes",
+            false
+        ),
+        (
+            instr_test_v3_04_zp_xy,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/04-zp_xy.nes",
+            false
+        ),
+        (
+            instr_test_v3_05_absolute,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/05-absolute.nes",
+            false
+        ),
+        (
+            instr_test_v3_06_abs_xy,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/06-abs_xy.nes",
+            false
+        ),
+        (
+            instr_test_v3_07_ind_x,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/07-ind_x.nes",
+            false
+        ),
+        (
+            instr_test_v3_08_ind_y,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/08-ind_y.nes",
+            false
+        ),
+        (
+            instr_test_v3_09_branches,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/09-branches.nes",
+            false
+        ),
+        (
+            instr_test_v3_10_stack,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/10-stack.nes",
+            false
+        ),
+        (
+            instr_test_v3_11_jmp_jsr,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/11-jmp_jsr.nes",
+            false
+        ),
+        (
+            instr_test_v3_12_rts,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/12-rts.nes",
+            false
+        ),
+        (
+            instr_test_v3_13_rti,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/13-rti.nes",
+            false
+        ),
+        (
+            instr_test_v3_14_brk,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/14-brk.nes",
+            false
+        ),
+        (
+            nes_instr_test_01_implied,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/01-implied.nes",
+            false
+        ),
+        (
+            nes_instr_test_02_immediate,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/02-immediate.nes",
+            false
+        ),
+        (
+            nes_instr_test_03_zero_page,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/03-zero_page.nes",
+            false
+        ),
+        (
+            nes_instr_test_04_zp_xy,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/04-zp_xy.nes",
+            false
+        ),
+        (
+            nes_instr_test_05_absolute,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/05-absolute.nes",
+            false
+        ),
+        (
+            nes_instr_test_06_abs_xy,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/06-abs_xy.nes",
+            false
+        ),
+        (
+            nes_instr_test_07_ind_x,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/07-ind_x.nes",
+            false
+        ),
+        (
+            nes_instr_test_08_ind_y,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/08-ind_y.nes",
+            false
+        ),
+        (
+            nes_instr_test_09_branches,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/09-branches.nes",
+            false
+        ),
+        (
+            nes_instr_test_10_stack,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/10-stack.nes",
+            false
+        ),
+        (
+            nes_instr_test_11_special,
+            "./tests/test_roms/cpu/nes_instr_test/rom_singles/11-special.nes",
+            false
+        ),
+        (
+            instr_test_v3_15_special,
+            "./tests/test_roms/cpu/instr_test-v3/rom_singles/15-special.nes",
+            false
+        ),
+        (instr_timing, "./tests/test_roms/cpu/instr_timing/instr_timing.nes", false),
+        (cpu_dummy_writes_oam, "./tests/test_roms/cpu/cpu_dummy_writes/cpu_dummy_writes_oam.nes", false),
+        (
+            cpu_dummy_writes_ppumem,
+            "./tests/test_roms/cpu/cpu_dummy_writes/cpu_dummy_writes_ppumem.nes",
+            false
+        )
+    ],
+    log_cmp: [
+        (nestest_rom, "./tests/test_roms/cpu/nestest.nes", "./tests/test_roms/cpu/nestest.log")
+    ],
+    screen_text: [
+        (cpu_dummy_reads, "./tests/test_roms/cpu/cpu_dummy_reads/cpu_dummy_reads.nes"),
+        (branch_timing_1_basics, "./tests/test_roms/cpu/branch_timing_tests/1.Branch_Basics.nes"),
+        (
+            branch_timing_2_backward_branch,
+            "./tests/test_roms/cpu/branch_timing_tests/2.Backward_Branch.nes"
+        ),
+        (
+            branch_timing_3_forward_branch,
+            "./tests/test_roms/cpu/branch_timing_tests/3.Forward_Branch.nes"
+        ),
+        (blargg_nes_cpu_test5_official, "./tests/test_roms/cpu/blargg_nes_cpu_test5/official.nes"),
+        (blargg_nes_cpu_test5_cpu, "./tests/test_roms/cpu/blargg_nes_cpu_test5/cpu.nes"),
+        (cpu_interrupts_v2, "./tests/test_roms/cpu/cpu_interrupts_v2/cpu_interrupts.nes"),
+        (
+            cpu_exec_space_ppuio,
+            "./tests/test_roms/cpu/cpu_exec_space/test_cpu_exec_space_ppuio.nes"
+        ),
+        (
+            cpu_exec_space_apu,
+            "./tests/test_roms/cpu/cpu_exec_space/test_cpu_exec_space_apu.nes"
+        )
+    ],
+    startup_buttons: [
+        (
+            cpu_timing_test6_official_headless,
+            "./tests/test_roms/cpu/cpu_timing_test6/cpu_timing_test.nes",
+            Buttons::empty(),
+            "official"
+        ),
+        (
+            cpu_timing_test6_nops_headless,
+            "./tests/test_roms/cpu/cpu_timing_test6/cpu_timing_test.nes",
+            Buttons::A,
+            "nops"
+        ),
+        (
+            cpu_timing_test6_unofficial_headless,
+            "./tests/test_roms/cpu/cpu_timing_test6/cpu_timing_test.nes",
+            Buttons::B,
+            "unofficial"
+        )
+    ]
+);

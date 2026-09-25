@@ -1,6 +1,6 @@
 # Capynes
 
-![Capynes](CAPYNES.PNG)
+![Capynes](assets/capynes.png)
 
 Capynes is a small NES emulator written in Rust. It started as a hands-on way to learn Rust through an interesting systems programming project, with WASM and wgpu as additional goals. 
 
@@ -17,6 +17,14 @@ What is not here:
 
 - Commercial game ROMs. Bring your own legally obtained `.nes` file when you want to play something.
 - A polished end-user emulator UI. This is still very much an engineering project.
+
+<p align="center">
+  <img src="assets/demo-2.gif" width="42%" alt="Capynes gameplay demo 2">
+  <img src="assets/demo-3.gif" width="42%" alt="Capynes gameplay demo 3">
+  <br>
+  <img src="assets/demo-1.gif" width="42%" alt="Capynes gameplay demo 1">
+  <img src="assets/demo-4.gif" width="42%" alt="Capynes gameplay demo 4">
+</p>
 
 ## Building
 
